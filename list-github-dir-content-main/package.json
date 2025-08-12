@@ -1,0 +1,38 @@
+{
+  "name": "list-github-dir-content",
+  "version": "4.0.4",
+  "description": "List all the files in a GitHub repo’s directory",
+  "keywords": [
+    "api",
+    "contents",
+    "dir",
+    "directory",
+    "folder",
+    "github",
+    "listing"
+  ],
+  "repository": "fregante/list-github-dir-content",
+  "license": "MIT",
+  "author": "Federico Brigante <me@fregante.com> (https://fregante.com)",
+  "type": "module",
+  "exports": "./index.js",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "manual-test": "node tests.js",
+    "test": "xo"
+  },
+  "xo": {
+    "envs": [
+      "browser"
+    ]
+  },
+  "devDependencies": {
+    "xo": "^0.58.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
