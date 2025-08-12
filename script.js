@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Ganti 'your_directory_path' dengan path direktori yang ingin ditampilkan.
     //  Contoh: '/data/' atau '/path/to/your/directory/'
-    const directoryPath = 'your_directory_path';
+    const directoryPath = 'github.com/abt29/debs';
 
     // Fungsi untuk mengambil data direktori (simulasikan dengan data dummy)
     function getDirectoryData(path) {
