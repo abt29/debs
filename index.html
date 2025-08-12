@@ -1,1 +1,17 @@
 <ul id="file-list"></ul>
+
+const repoOwner = "abt29";
+const repoName = "debs";
+const repoPath = "/"; // Direktori root, bisa diganti
+
+fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/contents/${repoPath}`)
+  .then(response => response.json())
+  .then(data => {
+    const fileList = document.getElementById("file-list");
+    data.forEach(item => {
+      const listItem = document.createElement("li");
+      listItem.textContent = item.name;
+      fileList.appendChild(listItem);
+    });
+  })
+  .catch(error => console.error("Error fetching data:", error));
