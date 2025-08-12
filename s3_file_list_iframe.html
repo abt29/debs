@@ -34,7 +34,7 @@ by cross-domain browser rules.
       var prefix = current_dir + '/';
 
       $(window).load(function() { 
-        if (bucket_url.indexOf('.github.io') < 0) {
+        if (bucket_url.indexOf('.github.io/debs') < 0) {
           $('#file_listing').html('<h1>This page must be loaded via bucketname.github.io/deb or else cross-domain rules will prevent it from functioning correctly.</h1>');
           return;
         }
