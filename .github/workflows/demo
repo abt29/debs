@@ -1,0 +1,42 @@
+# GitHub Actions demo to create a directory listing for the repository files to publish to GitHub Pages
+
+name: Demo Action
+
+on:
+  push:
+    branches: [ "master" ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set path label # (Optional)
+        run: echo caendesilva/php-directory-listing@master > .dl-pathlabel
+
+      - name: Run Directory Listing Script
+        run: php directory-listing.php
+
+      - name: Recursive usage # (Optional)
+        run: |
+          cd src && php ../directory-listing.php
+          cd icons && php ../../directory-listing.php
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
