@@ -1,0 +1,2 @@
+- name: File List
+  uses: martinhaintz/ga-file-list@v0.4.1
