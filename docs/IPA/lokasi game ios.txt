@@ -1,0 +1,24 @@
+Installation Instructions:
+
+  Hide contents
+Step 1: Open the app, play it a bit then close it from multitasking.
+
+Step 2: Download the file from the link above.
+
+Step 3: Unzip, copy/paste the files/folders to:
+
+ 
+
+iOS 7/6 and lower users: /User Applications/AppName using iFunBox or /var/mobile/Applications/AppName using iFile/Filza.
+
+ 
+
+iOS 8 users: /User Applications/AppName using iFunBox or /var/mobile/Containers/Data/Application/AppName using iFile/Filza.
+
+ 
+
+Non-Jailbroken iOS 8.3, 8.4, 9.0, 10.0 and higher read this tutorial: http://iosgods.com/topic/9651-how-to-installapply-hacks-posted-in-this-section-if-youre-on-ios-83-84-90/
+
+ 
+
+Step 4: Overwrite the new hacked files with your old ones and open the app.
