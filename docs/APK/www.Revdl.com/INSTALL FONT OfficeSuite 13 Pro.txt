@@ -1,4 +1,0 @@
-Install Font Pack :
-1. Install APK from Font Pack
-2. Copy folder “com.mobisystems.fonts” in “Android/obb”
-3. Enter and enjoy
