@@ -1,8 +1,0 @@
-
- prompt "Network Error-2" 
-
-Edit bagian manifest.xml..
- ganti network_security_config_release 
-jadi
- network_security_config
-
